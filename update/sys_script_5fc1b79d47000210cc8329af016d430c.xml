@@ -30,24 +30,26 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	// Add your code here
-	// rightnow stores the current time
-  var rightnow = new GlideDateTime();
-  // Create a GlideDateTime object for the When needed date
-  var whenNeeded = new GlideDateTime(current.u_when_needed);
+	
+	// Instantiate the NeedItUtils class.  Call the isDatePast method and pass 
+	
+  // the u_when_needed value.
+  var niutils = new NeedItUtils();
+  var isPast = niutils.isDatePast(current.u_when_needed);
   
-  // If the When needed date is before rightnow, do not write the record to the database
-  // Output an error message to the screen
-	if(whenNeeded.before(rightnow)){
-		gs.addErrorMessage("When needed date cannot be in the past.  Your request has not been saved to the database.");
-		current.setAbortAction(true);
+  // If the isDatePast method returns true, the date is in the past.
+  if(isPast == true){
+    gs.addErrorMessage("When needed date cannot be in the past.  Your request has not been saved to the database.");
+    current.setAbortAction(true);
   }
 	
 	// Challenge:  Do not allow same-day requests
+	
   // Get the date portion of rightnow and whenNeeded (no timestamp)
-	var today = rightnow.getLocalDate();
-	var istoday = whenNeeded.getLocalDate();
+	var isToday = niutils.isDateToday(current.u_when_needed);
+	
   // Compare today and istoday to see if they are the same day
-  if(today.compareTo(istoday) == 0){
+  if(isToday == true){
     gs.addErrorMessage("You cannot submit NeedIt requests for today.");
     current.setAbortAction(true);
   }
@@ -59,7 +61,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5fc1b79d47000210cc8329af016d430c</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>NeedIt When needed field date</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -67,7 +69,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_5fc1b79d47000210cc8329af016d430c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-01-29 19:43:20</sys_updated_on>
+        <sys_updated_on>2024-02-07 16:51:54</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
