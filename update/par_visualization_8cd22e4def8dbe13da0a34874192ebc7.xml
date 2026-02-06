@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_visualization">
+    <par_visualization action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <certified>false</certified>
+        <description/>
+        <macroponent display_value="Column">2bd5dc19a7ad083941b7c992a966dd78</macroponent>
+        <name>Monthly Active Requests by Requested for</name>
+        <properties>{"applyDateRange":false,"bareBorder":false,"chartVariation":"stacked","configVersion":"23.0.0-ci-SNAPSHOT","dataPassthrough":null,"dataSources":[{"allowRealTime":true,"dataCategories":["group","simple","trend"],"filterQuery":"","id":"dGFibGV4XzU4ODcyX25lZWRpdF9uZWVkaXQxNzcwMzQyNjMwNzI4MzQyOTA0MTUuMzIwMTA4NDM=","isDatabaseView":false,"label":null,"reportSourceSysId":"6368865ec3fe72105b58990ed40131f3","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"sourceType":"table","tableOrViewName":"x_58872_needit_needit","table":null}],"dateFormat":"default","disableTooltip":false,"emptyStateAlignment":"vertical-centered","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateHeading":"No data available.","emptyStateIllustration":"no-data","enableCustomEmptyState":false,"enableDrilldown":true,"enableRealTimeUpdate":null,"endTime":null,"extensionType":"bar","filterConfigurations":"@state.parFilters","followFilters":false,"groupBy":[{"disableRanges":false,"groupBy":[{"dataSource":"dGFibGV4XzU4ODcyX25lZWRpdF9uZWVkaXQxNzcwMzQyNjMwNzI4MzQyOTA0MTUuMzIwMTA4NDM=","groupByField":"u_requested_for","isChoice":false,"isPaBucket":false,"isRange":false,"metric":"ZEdGaWJHVjRYelU0T0RjeVgyNWxaV1JwZEY5dVpXVmthWFF4Tnpjd016UXlOak13TnpJNE16UXlPVEEwTVRVdU16SXdNVEE0TkRNPTE3NzAzNDI2MzA3Mjk3OTY5NTk2OS42ODEwMjc4MQ=="}],"hideZeroValues":false,"maxNumberOfGroups":12,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false}],"hideMatrixAggregate":false,"hideYAxis0":false,"hideYAxis1":true,"hideYAxis2":true,"hideYAxis3":true,"hideYAxis4":true,"legendExpandToFit":true,"legendHorizontalAlignment":"center","legendPosition":"bottom","lineStrokeWidth":"2","metrics":[{"aggregateFunction":"COUNT","axisId":"primary","dataSource":"dGFibGV4XzU4ODcyX25lZWRpdF9uZWVkaXQxNzcwMzQyNjMwNzI4MzQyOTA0MTUuMzIwMTA4NDM=","id":"ZEdGaWJHVjRYelU0T0RjeVgyNWxaV1JwZEY5dVpXVmthWFF4Tnpjd016UXlOak13TnpJNE16UXlPVEEwTVRVdU16SXdNVEE0TkRNPTE3NzAzNDI2MzA3Mjk3OTY5NTk2OS42ODEwMjc4MQ==","label":null,"transforms":{},"numberFormat":{"customFormat":true,"abbreviationEnabled":true,"numberInTooltipsEnabled":true},"durationFormat":{"customFormat":false},"dateFormat":{"customFormat":false},"stringFormat":{"customFormat":false}}],"newReporting":false,"numberOfPeriods":2,"period":null,"refreshFrequency":false,"scoreType":"latest","showAbsolutePeriod":null,"headerTitle":"Monthly Active Requests by Requested for","titleColor":{"value":null},"showHeader":true,"headerColor":{"value":null},"showBorder":true,"showChange":null,"showChangeFrom":null,"showChangePercentage":null,"showComment":false,"showConfidenceBand":false,"showDataLabels":false,"showDataPassthrough":false,"showFilterIcon":false,"showFirstGroupAggregate":false,"showForecast":false,"showForecastRange":false,"showGapPercentage":null,"showHeaderSeparator":false,"showLegend":true,"showLegendValue":false,"showMaximumRange":null,"showMetricLabel":null,"showSecondGroupAggregate":false,"showSparkline":null,"showSubAggregate":false,"showTarget":false,"showThreshold":false,"showTotalAggregate":false,"showContinuousLine":true,"enableAddZerosAtApi":false,"showMarkers":false,"showTotalValue":null,"showTrend":false,"showXGrid":false,"showYGrid":true,"sortBy":"name","sortByOrder":"asc","startTime":null,"telemetry":"null","trendBy":{"trendByFields":[{"field":"u_when_needed","metric":"ZEdGaWJHVjRYelU0T0RjeVgyNWxaV1JwZEY5dVpXVmthWFF4Tnpjd016UXlOak13TnpJNE16UXlPVEEwTVRVdU16SXdNVEE0TkRNPTE3NzAzNDI2MzA3Mjk3OTY5NTk2OS42ODEwMjc4MQ=="}],"trendByFrequency":"month","trendByMinuteInterval":null},"wrapTitle":false,"xAxisTitle":null,"yAxis0From":null,"yAxis0Position":"left","yAxis0Title":null,"yAxis0To":null,"showDataTable":false,"colorConfig":{"type":"default"}}</properties>
+        <requested_by/>
+        <scheduled_count>0</scheduled_count>
+        <sys_class_name>par_visualization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-06 01:50:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8cd22e4def8dbe13da0a34874192ebc7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Monthly Active Requests by Requested for</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>par_visualization_8cd22e4def8dbe13da0a34874192ebc7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-06 01:50:33</sys_updated_on>
+        <type>Column</type>
+    </par_visualization>
+</record_update>
